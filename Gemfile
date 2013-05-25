@@ -7,6 +7,9 @@ gem 'rails', '3.2.13'
 
 gem "mongoid", "~> 3.0.0"
 
+
+gem 'rails_admin'
+
 gem 'json'
 
 # Gems used only for assets and not required
@@ -39,3 +42,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+
+gem "devise"
