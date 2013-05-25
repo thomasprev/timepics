@@ -1,4 +1,6 @@
 Timepics::Application.routes.draw do
+  get "static_pages/aboutus"
+
   resources :pictures
 
   root :to => "pictures#index" 

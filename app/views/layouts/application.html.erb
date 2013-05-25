@@ -2,13 +2,40 @@
 <html>
 <head>
   <title>Timepics</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
-<%= yield %>
+	
+  <div class="navbar navbar-fixed-top">
+  	
+    <div class="navbar-inner">
+    
+    	<div class="container">
+			<h1>PiPics</h1>
+	        <div class="nav-collapse">
+	          <ul class="nav">
+	            <li><%= link_to "Browse Pics", pictures_path %></li>
+	            <li><%= link_to "About Us", "static_pages/aboutus.html"  %></li>
+	          </ul>
+	        </div>
+	    </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="span12"><%= yield %></div>
+    </div>
+  </div>
+
 
 </body>
 </html>
