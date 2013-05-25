@@ -1,4 +1,10 @@
 Timepics::Application.routes.draw do
+  get "images/index"
+
+  get "images/new"
+
+  get "images/show"
+
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'

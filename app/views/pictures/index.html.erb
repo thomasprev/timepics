@@ -12,10 +12,14 @@
   </tr>
 
 <% @pictures.each do |picture| %>
+
+	<div class="picture row">
+		<%= image_tag(picture.image_path, :size => "440x320") %>
+	</div>
+	
+	
+<!--
   <tr>
-  	
-  	<%= image_tag(picture.image_path) %>
-  	
     <td><%= picture.file %></td>
     <td><%= picture.title %></td>
     <td><%= picture.date %></td>
@@ -24,6 +28,7 @@
     <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
     <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
+-->
 <% end %>
 </table>
 
