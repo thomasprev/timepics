@@ -13,6 +13,9 @@
 
 <% @pictures.each do |picture| %>
   <tr>
+  	
+  	<%= image_tag(picture.image_path) %>
+  	
     <td><%= picture.file %></td>
     <td><%= picture.title %></td>
     <td><%= picture.date %></td>
